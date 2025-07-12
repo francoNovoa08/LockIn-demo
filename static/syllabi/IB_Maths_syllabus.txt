@@ -1,0 +1,359 @@
+Topic 1: Number and algebra
+
+
+In this topic, students explore the following concepts:
+
+1.1
+Operations with numbers in the form a × 10k where 1 ≤ a < 10 and k is an integer
+1.2
+Arithmetic sequences and series
+Use of the formulae for the nth term and the sum of the first n terms of the sequence
+Use of sigma notation for sums of arithmetic sequences 
+Applications of the skills above
+Analysis, interpretation and prediction where a model is not perfectly arithmetic in real life
+1.3 
+Geometric sequences and series
+Use of the formulae for the nth term and the sum of the first n terms of the sequence
+Use of sigma notation for the sums of geometric sequences
+Applications of the skills above
+1.4
+Financial applications of geometric sequences and series (compound interest and annual depreciation)
+1.5
+Laws of exponents with integer exponents
+Introduction to logarithms with base 10 and e
+Numerical evaluation of logarithms using technology
+1.6
+Simple deductive proof, numerical and algebraic; how to lay out a left-hand side to right-hand side (LHS to RHS) proof
+The symbols and notations for equality and identity
+1.7 
+Laws of exponents with rational exponents
+Laws of logarithms
+Change of base of a logarithm
+Solving exponential equations, including using logarithms. 
+1.8
+Sum of infinite convergent geometric sequences
+1.9
+The binomial theorem
+Use of Pascal's triangle and nCr
+1.10 (HL only)
+Counting principles, including permutations and combinations
+Extension of the binomial theorem to fractional and negative indices
+1.11 (HL only)
+Partial fractions 
+1.12 (HL only)
+Complex numbers: the number i, where i2 = − 1
+Cartesian form z = a + bi; the terms real part, imaginary part, conjugate, modulus and argument
+The complex plane
+1.13 (HL only)
+Modulus-argument (polar) form
+Euler form
+Sums, products and quotients in Cartesian, polar or Euler forms and their geometric interpretation
+1.14 (HL only)
+Complex conjugate roots of quadratic and polynomial equations with real coefficients
+De Moivre’s theorem and its extension to rational exponents
+Powers and roots of complex numbers
+1.15 (HL only)
+Proof by mathematical induction 
+Proof by contradiction 
+Use of a counterexample to show that a statement is Example: Consider the set P of numbers of the form not always true
+1.16 (HL only)
+Solutions of systems of linear equations (a maximum of three equations in three unknowns) including cases where there is a unique solution, an infinite number of solutions or no solution
+
+
+
+
+
+
+Topic 2: Functions
+
+
+In this topic, students explore the following concepts:
+
+2.1 
+Different forms of the equation of a straight line
+Gradient; intercepts
+Lines with gradients m1 and m2
+Parallel lines m1 = m2
+Perpendicular lines m1 × m2 = − 1
+2.2
+Concept of a function, domain, range and graph
+Function notation
+The concept of a function as a mathematical model
+Informal concept that an inverse function reverses or undoes the effect of a function
+Inverse function as a reflection in the line y = x, and the notation f−1 (x)
+2.3
+The graph of a function
+Creating a sketch from information given or a context, including transferring a graph from screen to paper
+Using technology to graph functions including their sums and differences
+2.4
+Determine key features of a graph
+Finding the point of intersection of two curves or lines using technology
+Composite functions
+Identity function. Finding the inverse function
+2.6
+The quadratic function, its graph, and y-intercept 
+The quadratic function f(x) = ax2 + bx + c: its graph, y-intercept (0, c). Axis of symmetry
+The form f(x) = a(x − p)(x − q), x-intercepts (p, 0) and (q, 0)
+The form f(x) = a (x − h)2 + k, vertex (h, k)
+2.7
+Solution of quadratic equations and inequalities. The quadratic formula
+The discriminant Δ = b2 − 4ac and the nature of the roots, that is, two distinct real roots, two equal real roots, no real roots
+The reciprocal function f(x) = 1/x , x ≠ 0: its graph and self-inverse nature
+Rational functions of the form f(x) = ax+b/cx+d and their graphs
+Equations of vertical and horizontal asymptotes
+2.9
+Exponential functions and their graphs: f(x) = ax, a > 0, f(x) = ex
+Logarithmic functions and their graphs: f(x)=logax, x>0, f(x)=lnx, x>0
+2.10
+Solving equations, both graphically and analytically
+Use of technology to solve a variety of equations, including those where there is no appropriate analytic approach
+Applications of graphing skills and solving equations that relate to real-life situations
+2.11
+Transformations of graphs
+Transaltions
+Reflections
+Verticle and horizontal stretch 
+Composite transformations
+2.12 (HL only)
+Polynomial functions, their graphs and equations; zeros, roots and factors
+The factor and remainder theorems
+Sum and product of the roots of polynomial equations
+2.13 (HL only)
+Rational functions
+2.14 (HL only)
+Odd and even functions 
+Finding the inverse function, including domain restriction 
+Self-inverse functions
+2.15 (HL only)
+Solutions of g(x) ≥ f (x), both graphically and analytically
+2.16 (HL only)
+Solution of modulus equations and inequalities. 
+
+
+
+
+Topic 3: Geometry and Trigonometry
+
+
+In this topic, students explore the following concepts:
+
+3.1
+The distance between two points in three- dimensional space, and their midpoint
+Volume and surface area of three-dimensional solids including right-pyramid, right cone, sphere, hemisphere and combinations of these solids
+The size of an angle between two intersecting lines or between a line and a plane
+3.2
+Use of sine, cosine and tangent ratios to find the sides and angles of right-angled triangles 
+The sine and cosine rule
+Area of a triangle
+3.3
+Applications of right and non-right angled trigonometry, including Pythagoras’s theorem
+Angles of elevation and depression 
+Construction of labelled diagrams from written statements
+3.4
+The circle: radian measure of angles; length of an arc; area of a sector 
+3.5
+Definition of cosθ, sinθ in terms of the unit circle
+Definition of tanθ as sinθ/cosθ 
+Extension of the sine rule to the ambiguous case
+3.6
+The Pythagorean identity cos2θ + sin2θ = 1
+Double angle identities for sine and cosine
+The relationship between trigonometric ratios
+3.7
+The circular functions sinx, cosx, and tanx; amplitude, their periodic nature, and their graphs 
+Composite functions of the form f(x) = asin(b(x + c)) + d
+Transformations
+3.8
+Solving trigonometric equations in a finite interval, both graphically and analytically
+Equations leading to quadratic equations in sinx, cosx or tanx
+3.9 (HL only)
+Definition of the reciprocal trigonometric ratios secθ, cosecθ and cotθ
+Pyhtagorean identities
+The inverse functions f(x) = arcsinx, f(x) = arccosx, f(x) = arctanx; their domains and ranges; their graphs
+3.10 (HL only)
+Compound angle identities
+Double angle identity for tan
+3.11 (HL only)
+Relationships between trigonometric functions and the symmetry properties of their graphs
+3.12 (HL only)
+Concept of a vector; position vectors; displacement vectors 
+Representation of vectors using directed line segments
+Base vectors i,j,k
+Components, magnitude, position, and displacement of a vector
+Proofs of geometrical properties using vectors
+3.13 (HL only)
+The definition of the scalar product of two vectors
+The angle between two vectors
+Perpendicular vectors; parallel vectors
+3.14 (HL only)
+Vector equation of a line in two and three dimensions: r = a + λb
+The angle between two lines
+Simple applications to kinematics
+3.15 (HL only)
+Coincident, parallel, intersecting and skew lines, distinguishing between these cases 
+Points of intersection
+3.16 (HL only)
+The definition of the vector product of two vectors
+Properties of the vector product
+Geometric interpretation of | v × w |
+3.17 (HL only)
+Vector equations of a plane: r = a + λb + μc, where b and c are non-parallel vectors within the plane; r · n = a · n, where n is a normal to the plane and a is the position vector of a point on the plane
+Cartesian equation of a plane ax + by + cz = d
+3.18 (HL only)
+Intersections of: a line with a plane; two planes; three planes
+Angle between: a line and a plane; two planes
+
+
+Check out our free Math AA IA exemplars
+View all exemplars on Clastify
+
+Topic 4: Statistics and probability 
+
+
+In this topic, students explore the following concepts:
+
+4.1
+Concepts of population, sample, random sample, discrete and continuous data
+Reliability of data sources and bias in sampling
+Interpretation of outliers
+Sampling techniques and their effectiveness
+4.2
+Presentation of data (discrete and continuous): frequency distributions (tables)
+Histograms
+Cumulative frequency; cumulative frequency graphs; use to find median, quartiles, percentiles, range and interquartile range (IQR)
+Production and understanding of box and whisker diagrams
+4.3
+Measures of central tendency (mean, median and mode) 
+Estimation of mean from grouped data
+Modal class
+Measures of dispersion (interquartile range, standard deviation and variance)
+Effect of constant changes on the original data
+Quartiles of discrete data
+4.4
+Linear correlation of bivariate data 
+Pearson’s product-moment correlation coefficient, r
+Scatter diagrams; lines of best fit, by eye, passing through the mean point
+Equation of the regression line of y on x
+Use of the equation of the regression line for prediction purposes
+Interpret the meaning of the parameters, a and b, in a linear regression y = ax + b
+4.5
+ Concepts of trial, outcome, equally likely outcomes, relative frequency, sample space (U) and event
+The probability of an event
+The complementary events A and A′ (not A)
+Expected number of occurrences
+4.6
+Use of Venn diagrams, tree diagrams, sample space diagrams and tables of outcomes to calculate probabilities
+Combined events 
+Mutually exclusive events
+Conditional probability
+Independent events
+4.7
+Concept of discrete random variables and their probability distributions 
+Expected value (mean), for discrete data 
+Applications of above concepts
+4.8
+Binomial distribution
+Mean and variance of the binomial distribution
+4.9
+The normal distribution and curve 
+Properties of the normal distribution 
+Diagrammatic representation
+Normal probability calculations
+Inverse normal calculations
+4.10
+Equation of the regression line of x on y
+Use of the equation for prediction purposes
+4.11
+Conditional probabilities and independent events
+4.12
+Standardization of normal variables (z- values)
+Inverse normal calculations where mean and standard deviation are unknown
+4.13 (HL only)
+Use of Bayes’ theorem for a maximum of three events
+4.14 (HL only)
+Variance of a discrete random variable
+Continuous random variables and their probability density functions
+Mode and median of continuous random variables
+Mean, variance and standard deviation of both discrete and continuous random variables
+The effect of linear transformations of X
+
+
+
+
+Topic 5: Calculus
+
+
+In this topic, students explore the following concepts:
+
+5.1
+Introduction to the concept of a limit
+Derivative interpreted as gradient function and as rate of change
+5.2
+Increasing and decreasing functions
+Graphical interpretation of f′(x) > 0, f′(x) = 0, f′(x) < 0
+5.3
+Derivative of f(x) = axn is f ′(x) = anxn−1, n ∈ Z
+The derivative of functions of the form f(x) = axn + bxn−1... where all exponents are integers
+5.4
+Tangents and normals at a given point, and their equations
+5.5
+Introduction to integration as anti-differentiation of functions of the form f(x) = axn + bxn-1 + ...., where n∈Z, n≠ −1
+Anti-differentiation with a boundary condition to determine the constant term
+Definite integrals using technology 
+Area of a region enclosed by a curve y = f(x) and the x -axis, where f (x) > 0
+5.6
+Derivative of xn (n ∈ Q), sinx, cosx, ex and lnx. 
+Differentiation of a sum and a multiple of these functions
+The chain rule for composite functions
+The product and quotient rules
+5.7
+The second derivative 
+Graphical behaviour of functions, including the relationship between the graphs of f , f ′ and f'′
+5.8
+Local maximum and minimum points 
+Testing for maximum and minimum
+Optimization
+Points of inflexion with zero and non-zero gradients
+5.9
+Kinematic problems involving displacement s, velocity v, acceleration a and total distance travelled
+5.10
+Indefinite integrals
+Composites
+Reverse chain rule
+5.11
+Definite integrals, including analytical approach
+Areas of a region enclosed by a curve y = f (x) and the x-axis, where f(x) can be positive or negative, without the use of technology
+Areas between curves 
+5.12 (HL only)
+Informal understanding of continuity and differentiability of a function at a point
+Understanding of limits (convergence and divergence)
+Higher derivatives
+5.13 (HL only)
+Evaluation of limits
+Repeated use of l’Hôpital’s rule
+5.14 (HL only)
+Implicit differentiation 
+Related rates of change 
+Optimisation problems
+5.15 (HL only)
+Derivatives of tanx, secx, cosecx,cotx, ax, logax, arcsinx, arccosx, arcta
+Indefinite integrals of the derivatives of any of the above functions
+The composites of any of the above with a linear function
+Use of partial fractions to rearrange the integrand
+5.16 (HL only)
+Integration by substitution
+Integration by parts
+Repeated integration by parts
+5.17 (HL only)
+Area of the region enclosed by a curve and the y-axis in a given interval 
+Volumes of revolution about the x-axis or y-axis
+5.18 (HL only)
+First order differential equations
+Numerical solution of dy/dx =  f(x,y) using Euler's rule
+Variables seperable
+Homogeneous differential equation dy/dx = f(y/x) using the substitution y = vx
+Solution of y′ + P(x)y = Q(x), using the integrating factor
+5.19 (HL only)
+Maclaurin series to obtain expansions for ex, sinx, cosx, ln(1 + x), (1 + x)p, p ∈ Q
+Use of simple substitution, products, integration, differentiatio  to obtain other series
+Maclaurin series developed from differential equation

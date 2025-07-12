@@ -1,0 +1,841 @@
+IB Economics Syllabus + Topics
+By Wojtek
+•
+
+November 8, 2024
+
+IB Economics Syllabus + Topics cover image
+Get feedback on your Economics IA
+Marked only by official IB examiners
+Whether you're a current IB Economics student looking to get a deeper grasp of the syllabus or a prospective IB student weighing your Group 3 options, this post will be your guide. We'll break down the IB Economics syllabus to give you a clear understanding of what to expect in the course. 
+
+
+
+IB Economics Syllabus + Topics
+
+
+The IB Economics syllabus is divided into four Units:
+
+Unit 1: Introduction to Economics
+Unit 2: Microeconomics
+Unit 3: Macroeconomics
+Unit 4: The Global Economy
+
+
+In these Units, you will explore the following topics:
+
+
+
+Unit 1: Introduction to Economics 
+
+
+1.1 What is economics? 
+
+Economics as a social science
+The social nature of economics
+The basis of the study of economics: microeconomics and macroeconomics
+Introduction to the nine central concepts: scarcity, choice, efficiency, equity, economic well-being, sustainability, change, interdependence, intervention
+The problem of choice 
+Factors of production—land, labour, capital and entrepreneurship
+Scarcity
+Opportunity cost
+The basic economic questions 
+Means of answering the economic questions
+The production possibilities curve (PPC)
+Assumptions of the model
+Increasing versus constant opportunity cost
+Features of the model: opportunity cost, scarcity, choice, unemployment of resources, efficiency, actual growth and growth in production possibilities
+Modelling the economy 
+The circular flow of income model
+Interdependence between economic decision-makers interacting and making choices in an economy: households, firms, the government, the banks and financial sector, and the foreign sector (foreign firms and households)
+Leakages and injections
+
+
+1.2 How do economists approach the world?
+
+Economic methodology
+The role of positive economics 
+The role of normative economics 
+Economic thought 
+Origin of economic ideas in a historical context 
+
+
+Unit 2: Microeconomics
+
+
+2.1 Demand
+
+The law of demand – relationship between price and quantity demanded
+Assumptions underlying the law of demand (HL only)
+Demand curve
+Relationship between an individual consumer’s demand and market demand
+Non-price determinants of demand
+Income
+Tastes and preferences
+Future price expectations
+Price of related goods (in the cases of substitutes and complements)
+Number of consumers
+Movements along the demand curve and shifts of the demand curve
+
+
+2.2 Supply
+
+The law of supply – relationship between price and quantity supplied
+Assumptions underlying the law of supply (HL only)
+Supply curve
+Relationship between an individual producer’s supply and market supply
+Non-price determinants of supply 
+Changes in costs of factors of production (FOPs)
+Prices of related goods (in the cases of joint and competitive supply
+Indirect taxes and subsidies
+Future price expectations
+Changes in technology
+Number of firms
+Movements along and shifts of the supply curve 
+
+
+2.3 Competitive market equilibrium 
+
+Demand and supply curves forming a market equilibrium 
+Shifting the demand and supply curves to produce a new market equilibrium, with reference to excess demand (shortage) and excess supply (surplus)
+Functions of the price mechanism
+Resource allocation 
+Rationing 
+Consumer and producer surplus
+Social/community surplus
+Allocative efficiency at the competitive market equilibrium:
+social/community surplus maximized at equilibrium
+marginal benefit equals marginal cost
+
+
+2.4 Critique of maximizing behaviour of consumers and producers (HL only)
+
+Rational consumer choice (HL only)
+Assumption – consumer rationality, utility maximization and perfect information
+Behavioural economics – limitations of the assumptions of rational consumer choice
+Behavioral economics in action 
+Choice architecture 
+Nudge theory 
+Business objectives 
+Profit maximization 
+Alternative business objectives 
+
+
+2.5 Elasticities of demand
+
+Concept of elasticity
+Price elasticity of demand (PED)
+PED formula
+Degrees of PED
+Changing PED along a straight line downward sloping demand curve (HL only)
+Determinants of PED – number and closeness of substitutes, degree of necessity, proportion of income spent on the good, time
+Relationship between PED and total revenue
+Importance of PED for firms and government decision making
+Reasons why the PED for primary commodities is generally lower than the PED for manufactured products (HL only)
+Income elasticity of demand (YED)
+YED formula
+Income elastic demand (services and luxury goods) and income inelastic demand (necessities)
+Significance of sign
+Importance of YED (HL only)
+
+
+2.6 Elasticity of supply
+
+Price elasticity of supply (PES)
+PES formula 
+Degrees of PES
+Determinants of PES
+Reasons why the PES for primary commodities is generally lower than the PES for manufactured products (HL only)
+
+
+2.7 Role of government in microeconomics
+
+Reasons for government intervention in markets 
+Main forms of government intervention in markets 
+Indirect taxes and subsidies
+Direct provision of services 
+Command and control regulation and legislation
+Consumer nudges (HL only)
+Government intervention in markets – consequences for markets and stakeholders
+
+
+2.8 Market failure – externalities and common pool or common access resources
+
+Socially optimum output: marginal social benefit (MSB) equals marginal social cost (MSC). 
+(MSB = MSC): allocative efficiency; social/community surplus maximized
+Positive externalities of production and consumption and welfare loss 
+Merit goods
+Negative externalities of production and consumption and welfare loss 
+Demerit goods
+Common pool resources
+Government intervention in response to externalities and common pool resources including:
+Indirect (Pigouvian) taxes
+Carbon taxes
+Legislation and regulation
+Education - awareness creation
+Tradable permits
+International agreements
+Collective self-governance
+Subsidies 
+Government provision
+Strengths and limitations of government policies to correct externalities and approaches to managing common pool resources including:
+challenges involved in measurement of externalities
+degree of effectiveness
+consequences for stakeholders
+Importance of international cooperation
+Global nature of sustainability issues
+Challenges faced in international cooperation
+Monitoring, enforcement
+
+
+2.9 Market failure - public goods
+
+Public goods
+Non-rivalrous, non-excludable
+Free rider problem
+Government intervention in response to public goods
+Direct provision
+Contracting out to the private sector
+
+
+2.10 Market failure (HL only)
+
+Asymmetric information
+Adverse selection
+Moral hazard
+Responses to asymmetric information 
+Government responses: legislation and regulation, provision of information
+Private responses: signalling and screening
+
+
+2.11 Market failure – market power (HL only)
+
+Perfect competition: many firms, free entry, homogeneous products
+Monopoly: single or dominant firm, high barriers to entry, no close substitutes
+Imperfect competition
+Oligopoly: few large firms, high barriers to entry, interdependence
+Monopolistic competition: many firms, free entry, product differentiation
+Rational producer behaviour: profit maximization (HL only)
+Total revenue - Total costs (TR -TC)
+Marginal cost = Marginal revenue (MC=MR)
+Abnormal profit (AR > AC)
+Normal profit (AR = AC)
+Losses (AR < AC)
+Degrees of market power 
+Meaning of market power
+Perfect competition 
+Monopoly
+Profit maximization
+Allocative inefficiency (market failure)
+Welfare loss in a monopoly in comparison with perfect competition due to restricted output and higher price
+Natural monopoly
+Oligopoly
+Collusive versus non-collusive
+Interdependence, risk of price war, incentive to collude, incentive to cheat
+Allocative inefficiency (market failure) simple game theory payoff matrix
+Price and non-price competition
+Measurement of market concentration – concentration ratios
+Monopolistic competition 
+Profit maximization
+Less market power due to many substitutes: more elastic demand curve compared with monopoly
+Allocative inefficiency (market failure
+Less inefficiency, more product variety 
+Advantages of large firms having significant market power, including:
+Economies of scale including natural monopolies
+Abnormal profits may finance investments in research and development (R&D), hence innovation
+Risks in markets dominated by one or a few very large firms
+Risks in terms of output, price, consumer choice
+Government intervention in response to abuse of significant market power
+Legislation and regulation
+Government ownership
+Fines
+
+
+2.12 The market's ability to achieve equity (HL only)
+
+Workings of free market economy may result in an unequal distribution of income and wealth
+
+
+
+
+Check out our free Economics IA exemplars
+View all exemplars on Clastify
+
+Unit 3: Macroeconomics
+
+
+3.1 Measuring economic activity and illustrating its variations
+
+National income accounting as a measure of economic activity
+Equivalence of the income, output and expenditure approaches to national income accounting, with reference to the circular flow model
+Gross domestic product (GDP) as a measure of national output
+Gross national income (GNI) as a measure of national output
+Real GDP and real GNI
+Real GDP/GNI per person (per capita) Real GDP/GNI per person (per capita) at purchasing power parity (PPP)
+Business cycle: short-term fluctuations and long-term growth trend (potential output) 
+Appropriateness of using GDP or GNI statistics to measure economic well-being—use of national income statistics for making:
+comparisons over time
+comparisons between countries
+Alternative measures of well-being
+OECD Better Life Index
+Happiness Index
+Happy Planet Index
+
+
+3.2 Variations in economic activity—aggregate demand and aggregate supply
+
+Aggregate demand (AD)
+Aggregate demand curve
+Components of AD: consumption (C) + investment (I) + government spending (G) + net exports (total exports [X] - total imports [M])
+Determinants of AD components
+C: consumer confidence, interest rates, wealth, income taxes, level of household indebtedness, expectations of future price level
+I: interest rates, business confidence, technology, business taxes, level of corporate indebtedness
+G: political and economic priorities
+X - M: income of trading partners, exchange rates, trade policies
+Shifts of the AD curve caused by changes in determinants
+Short-run aggregate supply (SRAS) curve and determinants of the SRAS curve
+Shifts of the SRAS curve
+Alternative views of aggregate supply (AS)
+Monetarist/new classical view of the long-run aggregate supply (LRAS) curve
+Keynesian view of the AS curve 
+Inflationary and deflationary/recessionary gaps
+Shifts of the AS curve over the long-run (monetarist/new classical LRAS) or over the long term (Keynesian AS)
+Changes in the quantity and/or quality of factors of production 
+Improvements in technology
+Increases in efficiency
+Changes in institutions
+Macroeconomic equilibrium
+Short-run equilibrium
+Equilibrium in the monetarist/new classical model 
+Assumptions and implications of the monetarist/new classical and Keynesian models 
+
+
+3.3 Macroeconomic objectives
+
+Economic growth 
+Short-term growth 
+Long-term growth 
+Measurement of economic growth 
+Consequences of economic growth 
+Low unemployment
+Measurement of unemployment and the unemployment rate
+Difficulties of measuring unemployment
+Causes of unemployment—cyclical (demand deficient), structural, seasonal, frictional
+Natural rate of unemployment—sum of the structural, seasonal, frictional unemployment
+Costs of unemployment—personal costs, social costs, economic costs
+Low and stable rate of inflation
+Measuring the inflation rate, using consumer price index (CPI) data
+The limitations of the CPI in measuring inflation
+Causes of inflation—demand-pull and cost-push
+Costs of a high inflation rate—uncertainty, redistributive effects, effects on saving, damage to export competitiveness, impact on economic growth, inefficient resource allocation
+Causes of deflation—changes in AD or SRAS
+Disinflation and deflation
+Costs of deflation—uncertainty, redistributive effects, deferred consumption, association with high levels of cyclical unemployment and bankruptcies, increase in the real value of debt, inefficient resource allocation, policy ineffectiveness
+Relative costs of unemployment versus inflation 
+Sustainable level of government (national) debt (HL only)
+Measurement of government (national) debt as a percentage of GDP
+Relationship between a budget deficit and government (national) debt
+Costs of a high government (national) debt—debt servicing costs, credit ratings, impacts on future taxation and government spending
+Potential conflict between macroeconomic objectives 
+Low unemployment and low inflation 
+Trade-off between unemployment and inflation (HL only)
+Phillips curve (HL only)
+High economic growth and low inflation
+High economic growth and environmental sustainability
+High economic growth and equity in income distribution
+
+
+3.4 Economics of inequality and poverty
+
+Relationships between equality and equity
+The meaning of economic inequality 
+Unequal distribution of income 
+Unequal distribution of wealth
+Measuring economic inequality
+Lorenz curve and Gini coefficient (index)
+Meaning of poverty
+Difference between absolute and relative poverty
+Measuring poverty
+Single indicators 
+Composite indicators 
+Difficulties in measuring poverty 
+Causes of economic inequality and poverty
+The impact of income and wealth inequality on:
+economic growth
+standards of living
+social stability
+The role of taxation in reducing poverty, income and wealth inequalities
+Progressive, regressive and proportional taxes
+Direct taxes
+Indirect taxes
+Further policies to reduce poverty, income and wealth inequality
+
+
+3.5 Demand management (demand-side policies): monetary policy
+
+Monetary policy
+Control of money supply and interest rates by the central bank
+Goals of monetary policy
+Low and stable rate of inflation
+Low unemployment
+Reduce business cycle fluctuations
+Promote a stable economic environment for long-term growth
+External balance
+The process of money creation by commercial banks (HL only)
+Tools of monetary policy (HL only)
+Demand and supply of money: determination of equilibrium interest rates (HL only)
+Real versus nominal interest rates
+Expansionary and contractionary monetary policies to close deflationary/recessionary and inflationary gaps
+Effectiveness of monetary policy 
+
+
+
+
+3.6 Demand management: fiscal policy
+
+Fiscal policy
+Sources of revenue: direct and indirect taxation, sale of goods and services from state-owned enterprises, sale of government assets
+Expenditures: current expenditures, capital expenditures, transfer payments
+Goals of fiscal policy
+Expansionary and contractionary fiscal policies in order to close deflationary/recessionary and inflationary gaps 
+Keynesian multiplies (HL only)
+Effectiveness of fiscal policy
+Goals of supply-side policies
+Long-term growth by increasing the economy’s productive capacity
+Improving competition and efficiency
+Reducing labour costs and unemployment through labour market flexibility
+Reducing inflation to improve international competitiveness
+Increasing firms’ incentives to invest in innovation by reducing costs
+Markt-based policies including:
+Policies to encourage competition 
+Labour market policies 
+Incentive-related policies
+Interventionist policies 
+Demand-side effects of supply-side policies
+Supply-side effects of fiscal policies
+Effectiveness of supply-side policies
+
+
+Unit 4: The Global Economy 
+
+
+4.1 Benefits of international trade
+
+Benefits of international trade
+Absolute and comparative advantage (HL only) 
+Gains from trade
+Sources of comparative advantage
+Opportunity costs
+Limitations of the theory of comparative advantage (HL only)
+
+
+4.2 Types of trade protection
+
+ Tariffs, quotas, and subsidies 
+Effects on markets and stakeholders
+Administrative barriers
+
+
+4.3 Arguments for and against trade control/ protection
+
+Arguments for trade protection/advantages of trade protection, including:
+protection of infant (sunrise) industries
+national security
+health and safety
+environmental standards
+anti-dumping
+unfair competition
+balance of payments correction
+government revenue
+protection of jobs
+Economically least developed country (ELDC) diversification
+Arguments against trade protection/disadvantages of trade protection, including:
+misallocation of resources
+retaliation
+increased costs
+higher prices
+less choice
+domestic firms lack incentive to become more efficient
+reduced export competitiveness
+Free trade versus trade protection 
+
+
+4.4 Economic integration 
+
+Preferential trade agreements
+Bilateral
+Regional
+Multilateral (the World Trade Organization)
+Trading blocs
+Free trade areas/agreements
+Customs unions
+Common markets
+Advantages and disadvantages of trading blocs 
+Advantages, including:
+trade creation (HL only)
+greater access to markets offer potential for economies of scale
+with freedom of labour, there are greater employment opportunities
+membership in a trading bloc may allow for stronger bargaining power in multilateral negotiations
+greater political stability and cooperation 
+Disadvantages, including:
+trade diversion (HL only)
+loss of sovereignty
+challenge to multilateral trading negotiations
+Monetary union 
+Advantages and disadvantages of monetary union (HL only)
+The WTO
+
+
+4.5 Exchange rates
+
+Floating exchange rates
+Changes in demand and supply for a currency
+Consequences of changes in the exchange rate on economic indicators
+Fixed exchange rate
+Managed exchange rates
+
+
+
+
+4.6 Balance of payments
+
+Balance of payments
+Credit and debit items
+Surplus or deficit on an account
+Components of the balance of payments 
+Interdependence between the accounts
+Zero balance in the balance of payments
+Credits matched by debits
+Deficits matched by surpluses
+Relationship between the current account and the exchange rate (HL only) 
+Relationship between the financial account and the exchange rate (HL only)
+Implications of a persistent current account deficit in terms of: (HL only)
+exchange rates
+interest rates
+foreign ownership of domestic assets
+debt
+credit ratings
+demand management
+economic growth
+Methods to correct a persistent current account deficit (HL only)
+Expenditure switching
+Expenditure reducing
+Supply-side policies
+Effectiveness of measures to correct a persistent current account deficit (HL only)
+The Marshall-Lerner condition and the J-curve effect (HL only) 
+Implications of a persistent current account surplus in terms of (HL only):
+domestic consumption and investment
+exchange rates
+inflation
+employment 
+export competitiveness
+
+
+4.7 Sustainable development
+
+The meaning of sustainable development 
+SDGs
+Relationship between sustainability and poverty (HL only)
+
+
+4.8 Measuring development 
+
+The multidimensional nature of economic development
+Single indicators 
+GDP/GNI per person (per capita) at PPP 
+Health and education indicators 
+Economic/social inequality indicators 
+Energy indicators 
+Environmental indicators
+Composite indicators
+Human Development Index (HDI)
+Gender Inequality Index (GII)
+Inequality adjusted Human Development Index (IHDI)
+Happy Planet Index 
+Strengths and limitations of approaches to measuring economic development
+Possible relationship between economic growth and economic development
+
+
+4.9 Barriers to economic growth and/or economic development
+
+Poverty traps/poverty cycles
+Economic barriers
+Political and social barriers
+Significance of different barriers to economic growth and/or economic development
+
+
+4.10  Economic growth and/or economic development strategies
+
+Strategies to promote economic growth and/or economic development
+Trade strategies 
+Diversification
+Social enterprise
+Market-based policies
+Interventionist policies
+Provision of merit goods 
+Inward foreign direct investment
+Foreign aid
+Multilateral development assistance
+Institutional change
+Strengths and limitations of strategies for promoting economic growth and economic development
+Strengths and limitations of government intervention versus market-oriented approaches to achieving economic growth and economic development
+Progress toward meeting selected Sustainable Development Goals in the context of two or more countries
+
+
+
+
+
+
+We hope you found this post helpful. For more useful materials associated with the IB check out the wide variety of IA, EE and TOK exemplars available at Clastify. 
+
+IB Economics Syllabus + Topics
+By Wojtek
+•
+
+November 8, 2024
+
+IB Economics Syllabus + Topics cover image
+Get feedback on your Economics IA
+Marked only by official IB examiners
+Whether you're a current IB Economics student looking to get a deeper grasp of the syllabus or a prospective IB student weighing your Group 3 options, this post will be your guide. We'll break down the IB Economics syllabus to give you a clear understanding of what to expect in the course. 
+
+
+
+IB Economics Syllabus + Topics
+
+
+The IB Economics syllabus is divided into four Units:
+
+Unit 1: Introduction to Economics
+Unit 2: Microeconomics
+Unit 3: Macroeconomics
+Unit 4: The Global Economy
+
+
+In these Units, you will explore the following topics:
+
+
+
+Unit 1: Introduction to Economics 
+
+
+1.1 What is economics? 
+
+Economics as a social science
+The social nature of economics
+The basis of the study of economics: microeconomics and macroeconomics
+Introduction to the nine central concepts: scarcity, choice, efficiency, equity, economic well-being, sustainability, change, interdependence, intervention
+The problem of choice 
+Factors of production—land, labour, capital and entrepreneurship
+Scarcity
+Opportunity cost
+The basic economic questions 
+Means of answering the economic questions
+The production possibilities curve (PPC)
+Assumptions of the model
+Increasing versus constant opportunity cost
+Features of the model: opportunity cost, scarcity, choice, unemployment of resources, efficiency, actual growth and growth in production possibilities
+Modelling the economy 
+The circular flow of income model
+Interdependence between economic decision-makers interacting and making choices in an economy: households, firms, the government, the banks and financial sector, and the foreign sector (foreign firms and households)
+Leakages and injections
+
+
+1.2 How do economists approach the world?
+
+Economic methodology
+The role of positive economics 
+The role of normative economics 
+Economic thought 
+Origin of economic ideas in a historical context 
+
+
+Unit 2: Microeconomics
+
+
+2.1 Demand
+
+The law of demand – relationship between price and quantity demanded
+Assumptions underlying the law of demand (HL only)
+Demand curve
+Relationship between an individual consumer’s demand and market demand
+Non-price determinants of demand
+Income
+Tastes and preferences
+Future price expectations
+Price of related goods (in the cases of substitutes and complements)
+Number of consumers
+Movements along the demand curve and shifts of the demand curve
+
+
+2.2 Supply
+
+The law of supply – relationship between price and quantity supplied
+Assumptions underlying the law of supply (HL only)
+Supply curve
+Relationship between an individual producer’s supply and market supply
+Non-price determinants of supply 
+Changes in costs of factors of production (FOPs)
+Prices of related goods (in the cases of joint and competitive supply
+Indirect taxes and subsidies
+Future price expectations
+Changes in technology
+Number of firms
+Movements along and shifts of the supply curve 
+
+
+2.3 Competitive market equilibrium 
+
+Demand and supply curves forming a market equilibrium 
+Shifting the demand and supply curves to produce a new market equilibrium, with reference to excess demand (shortage) and excess supply (surplus)
+Functions of the price mechanism
+Resource allocation 
+Rationing 
+Consumer and producer surplus
+Social/community surplus
+Allocative efficiency at the competitive market equilibrium:
+social/community surplus maximized at equilibrium
+marginal benefit equals marginal cost
+
+
+2.4 Critique of maximizing behaviour of consumers and producers (HL only)
+
+Rational consumer choice (HL only)
+Assumption – consumer rationality, utility maximization and perfect information
+Behavioural economics – limitations of the assumptions of rational consumer choice
+Behavioral economics in action 
+Choice architecture 
+Nudge theory 
+Business objectives 
+Profit maximization 
+Alternative business objectives 
+
+
+2.5 Elasticities of demand
+
+Concept of elasticity
+Price elasticity of demand (PED)
+PED formula
+Degrees of PED
+Changing PED along a straight line downward sloping demand curve (HL only)
+Determinants of PED – number and closeness of substitutes, degree of necessity, proportion of income spent on the good, time
+Relationship between PED and total revenue
+Importance of PED for firms and government decision making
+Reasons why the PED for primary commodities is generally lower than the PED for manufactured products (HL only)
+Income elasticity of demand (YED)
+YED formula
+Income elastic demand (services and luxury goods) and income inelastic demand (necessities)
+Significance of sign
+Importance of YED (HL only)
+
+
+2.6 Elasticity of supply
+
+Price elasticity of supply (PES)
+PES formula 
+Degrees of PES
+Determinants of PES
+Reasons why the PES for primary commodities is generally lower than the PES for manufactured products (HL only)
+
+
+2.7 Role of government in microeconomics
+
+Reasons for government intervention in markets 
+Main forms of government intervention in markets 
+Indirect taxes and subsidies
+Direct provision of services 
+Command and control regulation and legislation
+Consumer nudges (HL only)
+Government intervention in markets – consequences for markets and stakeholders
+
+
+2.8 Market failure – externalities and common pool or common access resources
+
+Socially optimum output: marginal social benefit (MSB) equals marginal social cost (MSC). 
+(MSB = MSC): allocative efficiency; social/community surplus maximized
+Positive externalities of production and consumption and welfare loss 
+Merit goods
+Negative externalities of production and consumption and welfare loss 
+Demerit goods
+Common pool resources
+Government intervention in response to externalities and common pool resources including:
+Indirect (Pigouvian) taxes
+Carbon taxes
+Legislation and regulation
+Education - awareness creation
+Tradable permits
+International agreements
+Collective self-governance
+Subsidies 
+Government provision
+Strengths and limitations of government policies to correct externalities and approaches to managing common pool resources including:
+challenges involved in measurement of externalities
+degree of effectiveness
+consequences for stakeholders
+Importance of international cooperation
+Global nature of sustainability issues
+Challenges faced in international cooperation
+Monitoring, enforcement
+
+
+2.9 Market failure - public goods
+
+Public goods
+Non-rivalrous, non-excludable
+Free rider problem
+Government intervention in response to public goods
+Direct provision
+Contracting out to the private sector
+
+
+2.10 Market failure (HL only)
+
+Asymmetric information
+Adverse selection
+Moral hazard
+Responses to asymmetric information 
+Government responses: legislation and regulation, provision of information
+Private responses: signalling and screening
+
+
+2.11 Market failure – market power (HL only)
+
+Perfect competition: many firms, free entry, homogeneous products
+Monopoly: single or dominant firm, high barriers to entry, no close substitutes
+Imperfect competition
+Oligopoly: few large firms, high barriers to entry, interdependence
+Monopolistic competition: many firms, free entry, product differentiation
+Rational producer behaviour: profit maximization (HL only)
+Total revenue - Total costs (TR -TC)
+Marginal cost = Marginal revenue (MC=MR)
+Abnormal profit (AR > AC)
+Normal profit (AR = AC)
+Losses (AR < AC)
+Degrees of market power 
+Meaning of market power
+Perfect competition 
+Monopoly
+Profit maximization
+Allocative inefficiency (market failure)
+Welfare loss in a monopoly in comparison with perfect competition due to restricted output and higher price
+Natural monopoly
+Oligopoly
+Collusive versus non-collusive
+Interdependence, risk of price war, incentive to collude, incentive to cheat
+Allocative inefficiency (market failure) simple game theory payoff matrix
+Price and non-price competition
+Measurement of market concentration – concentration ratios
+Monopolistic competition 
+Profit maximization
+Less market power due to many substitutes: more elastic demand curve compared with monopoly
+Allocative inefficiency (market failure
+Less inefficiency, more product variety 
+Advantages of large firms having significant market power, including:
+Economies of scale including natural monopolies
+Abnormal profits may finance investments in research and development (R&D), hence innovation
+Risks in markets dominated by one or a few very large firms
+Risks in terms of output, price, consumer choice
+Government intervention in response to abuse of significant market power
+Legislation and regulation
+Government ownership
+Fines

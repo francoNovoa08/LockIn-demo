@@ -1,0 +1,202 @@
+IB Computer Science Syllabus + Topics
+
+
+
+
+The IB Computer Science syllabus consists of two main components – core, and option topics.
+
+
+
+Core 
+
+
+For the core component, students study seven topics (five for SL students) from various areas of computer science. The IB Computer Science core topics are as follows:
+
+
+
+Topic 1: System fundamentals
+
+
+In this topic you will cover the following concepts:
+
+
+
+Systems in organizations
+Planning and system installation
+User focus
+System backup
+Software deployment
+Components of a computer 
+System design basics
+Components of a computer system
+System design and analysis 
+Human interaction with the system
+
+
+Topic 2: Computer organizations 
+
+
+In this topic you will cover the following concepts:
+
+
+
+Computer architecture
+Secondary memory
+Operating systems and application systems
+Binary representation
+Simple logic gates
+
+Topic 3: Networks
+
+
+In this topic you will cover the following concepts:
+
+
+
+Network fundamentals
+Data transmission
+Wireless networking
+
+
+Topic 4: Computational thinking, problem-solving and programming
+
+
+In this topic you will cover the following concepts:
+
+
+
+General principles
+Thinking procedurally
+Thinking logically
+Thinking ahead
+Thinking concurently
+Thinking abstractly 
+Connecting computational thinking and program design
+Introduction to programming
+Nature of programming languages
+Use of programming languages
+
+
+Topic 5: Abstract data structures (HL)
+
+
+In this topic you will cover the following concepts:
+
+
+
+Thinking recursively
+
+Abstract data structures
+
+Linked lists
+
+Binary trees
+
+
+
+Topic 6: Resource management
+
+
+In this topic you will cover the following concepts:
+
+
+
+Resource management
+
+System resources
+
+Role of the operating system
+
+
+
+Topic 7: Control
+
+
+In this topic you will cover the following concepts:
+
+
+
+Centralized control systems
+
+Distributed systems
+
+
+
+
+
+Check out our free Computer Science IA exemplars
+View all exemplars on Clastify
+
+Options
+
+
+For the optional topics component, students select one topic from the four availabe options:
+
+
+
+Option A: Databases
+
+
+In this topic you are going to study the following concepts:
+
+
+
+Basic database concepts
+
+The relatioinal database model
+
+Further aspects of database management
+
+Further database models and database analyis (HL only)
+
+
+
+Option B: Modelling and simulation
+
+
+In this topic you are going to study the following concepts:
+
+
+
+The basic model
+
+Simulations
+
+Visualization
+
+Communication modeling and simulation (HL only)
+
+
+
+Option C: Web science
+
+
+In this topic you are going to study the following concepts:
+
+
+
+Creating the web
+
+Searching the web
+
+Distributed approaches to the web
+
+The evolving web
+
+Analysing the web (HL extension)
+
+The intelligent web (HL only)
+
+
+
+Option D: Object-oriented programming
+
+
+In this topic you are going to study the following concepts:
+
+
+
+Objects as a programming concept
+Features of OOP
+Program development 
+Advanced program development (HL only)
