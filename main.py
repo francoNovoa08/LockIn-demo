@@ -20,11 +20,14 @@ def generate_mcqs():
     topic = data.get("topic", "Functions")
     difficulty = data.get("difficulty", "Medium")
     num_questions = data.get("numQuestions", 5)
+    ib_level = data.get("ibLevel", "")
 
+    level_str = f" at the IB level {ib_level}" if curriculum == "IB" and ib_level else ""
+    
     prompt = f"""
 You are an expert {curriculum} {subject} tutor.
 
-Generate {num_questions} multiple-choice questions (MCQs) on the topic "{topic}" for the {curriculum} curriculum. 
+Generate {num_questions} multiple-choice questions (MCQs) on the topic "{topic}" for the {curriculum}{level_str} curriculum. 
 Ensure the questions are relevant to the {curriculum} curriculum. Abide by this strictly.
 Make the questions suitable for {difficulty} level students.
 Each question must have:

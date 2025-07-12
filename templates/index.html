@@ -18,10 +18,18 @@
 
   <label for="curriculum">Curriculum:</label>
   <select id="curriculum">
-    <option value="IB">IB</option>
     <option value="IGCSE">IGCSE</option>
-    <option value="IGCSE">A Levels</option>
+    <option value="IB">IB</option>
+    <option value="A-Levels">A Levels</option>
   </select><br><br>
+
+  <div id="ib-level-container" style="display: none;">
+    <label for="ibLevel">IB Level:</label>
+    <select id="ibLevel">
+      <option value="SL">SL</option>
+      <option value="HL">HL</option>
+    </select><br><br>
+  </div>
 
   <label for="subject">Subject:</label>
   <select id="subject">
@@ -58,5 +66,12 @@
   <div id="output" style="margin-top: 20px;"></div>
 
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+  <script>
+    document.getElementById('curriculum').addEventListener('change', function () {
+      const ibLevelContainer = document.getElementById('ib-level-container');
+      ibLevelContainer.style.display = this.value === 'IB' ? 'block' : 'none';
+    });
+  </script>
 </body>
 </html>
