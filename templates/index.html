@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>LockIn</title>
+  <link rel="stylesheet" href="style.css">
   <script>
     async function generateQuestions() {
       const curriculum = document.getElementById('curriculum').value;
       const subject = document.getElementById('subject').value;
       const topic = document.getElementById('topic').value;
-      const difficulty = document.getElementById('difficulty').value
+      const difficulty = document.getElementById('difficulty').value;
 
       const res = await fetch('/generate', {
         method: 'POST',
@@ -18,12 +19,84 @@
 
       const data = await res.json();
       const output = document.getElementById('output');
+      output.innerHTML = ''; // Clear previous output
 
       if (data.questions) {
-        output.innerText = data.questions;
+        const questions = parseQuestions(data.questions);
+        if (questions.length === 0) {
+          output.innerHTML = "<p><strong>Could not parse any questions.</strong>                         Check format or try again.</p>";
+          return;
+        }
+        questions.forEach((q, index) => {
+          const container = document.createElement('div');
+          container.style.marginBottom = '30px';
+          container.style.padding = '15px';
+          container.style.border = '1px solid #ccc';
+          container.style.borderRadius = '8px';
+          container.style.backgroundColor = '#fefefe';
+
+          const questionText = document.createElement('p');
+          questionText.innerHTML = `<strong>Q${index + 1}:</strong> ${q.question}`;
+          container.appendChild(questionText);
+
+          q.options.forEach((opt, i) => {
+            const btn = document.createElement('button');
+            btn.textContent = opt;
+            btn.style.margin = '5px';
+            btn.onclick = () => {
+              if (opt[0] === q.answer) {
+                btn.style.backgroundColor = '#c6f6c6';
+              } else {
+                btn.style.backgroundColor = '#f6c6c6';
+              }
+
+              explanation.innerHTML = `<strong>Explanation:</strong> ${q.explanation}`;
+            };
+            container.appendChild(btn);
+          });
+
+          const hintBtn = document.createElement('button');
+          hintBtn.textContent = "Show Hint";
+          hintBtn.style.marginTop = '10px';
+          hintBtn.onclick = () => {
+            hint.innerHTML = `<strong>Hint:</strong> ${q.hint}`;
+          };
+          container.appendChild(document.createElement('br'));
+          container.appendChild(hintBtn);
+
+          const hint = document.createElement('p');
+          const explanation = document.createElement('p');
+          hint.style.marginTop = '10px';
+          explanation.style.marginTop = '10px';
+
+          container.appendChild(hint);
+          container.appendChild(explanation);
+
+          output.appendChild(container);
+        });
       } else {
         output.innerText = "Error: " + data.error;
       }
+    }
+
+    function parseQuestions(rawText) {
+      const blocks = rawText.trim().split(/\n(?=\d+\.\s)/); // Split by numbered questions
+      const parsed = blocks.map(block => {
+        const questionMatch = block.match(/\d+\.\s(.*?)\n/);
+        const optionMatches = block.match(/^[A-D]\.\s.*$/gm);
+        const answerMatch = block.match(/Answer:\s*([A-D])/i);
+        const hintMatch = block.match(/Hint:\s*(.*)/i);
+        const explanationMatch = block.match(/Explanation:\s*(.*)/i);
+
+        return {
+          question: questionMatch ? questionMatch[1] : "N/A",
+          options: optionMatches || [],
+          answer: answerMatch ? answerMatch[1] : "A",
+          hint: hintMatch ? hintMatch[1] : "No hint provided.",
+          explanation: explanationMatch ? explanationMatch[1] : "No explanation provided."
+        };
+      });
+      return parsed;
     }
   </script>
 </head>
@@ -41,6 +114,11 @@
     <option value="Math">Maths</option>
     <option value="Physics">Physics</option>
     <option value="Biology">Biology</option>
+    <option value="Chemistry">Chemistry</option>
+    <option value="History">History</option>
+    <option value="Geography">Geography</option>
+    <option value="Economics">Economics</option>
+    <option value="Computer Science">Computer Science</option>
   </select><br><br>
 
   <label for="topic">Topic:</label>
@@ -51,10 +129,12 @@
     <option value="Easy">Easy</option>
     <option value="Medium">Medium</option>
     <option value="Hard">Hard</option>
+    <option value="Mixed">Mixed</option>
   </select><br><br>
 
   <button onclick="generateQuestions()">Generate MCQs</button>
 
-  <pre id="output" style="margin-top: 20px; white-space: pre-wrap; background-color: #f9f9f9; padding: 20px; border-radius: 8px;"></pre>
+  <div id="output" style="margin-top: 20px;"></div>
+
 </body>
 </html>

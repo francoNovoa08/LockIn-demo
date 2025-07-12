@@ -23,7 +23,7 @@ def generate_mcqs():
     prompt = f"""
 You are an expert {curriculum} {subject} tutor.
 
-Generate 3 multiple-choice questions (MCQs) on the topic "{topic}" for the {curriculum} curriculum. 
+Generate 5 multiple-choice questions (MCQs) on the topic "{topic}" for the {curriculum} curriculum. 
 Ensure the questions are relevant to the {curriculum} curriculum. Abide by this strictly.
 Make the questions suitable for {difficulty} level students.
 Each question must have:
@@ -33,7 +33,7 @@ Each question must have:
 - A short hint
 - A short explanation
 
-Format exactly like this:
+Strictly use this format with NO extra line breaks or markdown:
 
 1. Question?
    A. ...
