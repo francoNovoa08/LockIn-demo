@@ -19,7 +19,7 @@ def generate_mcqs():
     subject = data.get("subject", "Math")
     topic = data.get("topic", "Functions")
     difficulty = data.get("difficulty", "Medium")
-    num_questions = data.get("num_questions", 5)
+    num_questions = data.get("numQuestions", 5)
 
     prompt = f"""
 You are an expert {curriculum} {subject} tutor.
