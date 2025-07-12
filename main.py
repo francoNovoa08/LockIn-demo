@@ -8,9 +8,16 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 @app.route("/")
-def index():
+def home():
     return render_template("index.html")
 
+@app.route("/quiz")
+def quiz():
+    return render_template("quiz.html")
+
+@app.route("/learn")
+def learn():
+    return render_template("learn.html")
 
 @app.route("/generate", methods=["POST"])
 def generate_mcqs():

@@ -1,9 +1,10 @@
 :root {
   --LockIn-purple: #855af8;
+  --LockIn-purple-light: #9e86ff;
   --LockIn-purple-blue: #5f70ee;
   --LockIn-blue: #468df2;
   --LockIn-blue-light: #50a5f8;
-  --LockIn-purple-light: #9e86ff;
+  --LockIn-blue-lighter: #56b0f0;
 }
 
 button {
@@ -43,4 +44,7 @@ label {
 }
 #difficulty-label {
   background-color: var(--LockIn-blue-light)
+}
+#numQuestions-label {
+  background-color: var(--LockIn-blue-lighter)
 }

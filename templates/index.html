@@ -4,73 +4,11 @@
   <meta charset="UTF-8">
   <title>LockIn</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-      svg: { fontCache: 'global' }
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <h1>LockIn</h1>
-
-  <label for="curriculum" id="curriculum-label">Curriculum:</label>
-  <select id="curriculum">
-    <option value="IGCSE">IGCSE</option>
-    <option value="IB">IB</option>
-  </select><br><br>
-
-  <div id="ib-level-container" style="display: none;">
-    <label for="ibLevel" id="level-label">IB Level:</label>
-    <select id="ibLevel">
-      <option value="SL">SL</option>
-      <option value="HL">HL</option>
-    </select><br><br>
-  </div>
-
-  <label for="subject" id="subject-label">Subject:</label>
-  <select id="subject">
-    <option value="Math">Mathematics</option>
-    <option value="Physics">Physics</option>
-    <option value="Biology">Biology</option>
-    <option value="Chemistry">Chemistry</option>
-    <option value="History">History</option>
-    <option value="Geography">Geography</option>
-    <option value="Business">Business</option>
-    <option value="Economics">Business</option>
-    <option value="Computer Science">Computer Science</option>
-    <option value="Sports Science">Computer Science</option>
-  </select><br><br>
-
-  <label for="topic" id="topic-label">Topic:</label>
-  <input type="text" id="topic" placeholder="e.g., Quadratics"><br><br>
-
-  <label for="difficulty" id="difficulty-label">Difficulty:</label>
-  <select id="difficulty">
-    <option value="Easy">Easy</option>
-    <option value="Medium">Medium</option>
-    <option value="Hard">Hard</option>
-    <option value="Mixed">Mixed</option>
-  </select><br><br>
-
-  <label for="numQuestions">Number of Questions:</label>
-  <input type="number" id="numQuestions" min="1" max="8" value="5"><br><br>
-
-
-  <button onclick="generateQuestions()">Generate MCQs</button>
-
-  <div id="score" style="margin-bottom: 15px; font-weight: bold;"></div>
-  <div id="output" style="margin-top: 20px;"></div>
-
-  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-
-  <script>
-    document.getElementById('curriculum').addEventListener('change', function () {
-      const ibLevelContainer = document.getElementById('ib-level-container');
-      ibLevelContainer.style.display = this.value === 'IB' ? 'block' : 'none';
-    });
-  </script>
+  <h1>Welcome to LockIn</h1>
+  <p>Select a mode:</p>
+  <button onclick="window.location.href='/quiz'">Quiz Mode</button>
+  <button onclick="window.location.href='/learn'">Learn Mode</button>
 </body>
 </html>
