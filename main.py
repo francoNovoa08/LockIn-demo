@@ -1,7 +1,7 @@
 import os
 
-from openai import OpenAI
 from flask import Flask, jsonify, render_template, request
+from openai import OpenAI
 
 app = Flask(__name__)
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -18,11 +18,14 @@ def generate_mcqs():
     curriculum = data.get("curriculum", "IB")
     subject = data.get("subject", "Math")
     topic = data.get("topic", "Functions")
+    difficulty = data.get("difficulty", "Medium")
 
     prompt = f"""
 You are an expert {curriculum} {subject} tutor.
 
 Generate 3 multiple-choice questions (MCQs) on the topic "{topic}" for the {curriculum} curriculum. 
+Ensure the questions are relevant to the {curriculum} curriculum. Abide by this strictly.
+Make the questions suitable for {difficulty} level students.
 Each question must have:
 - A clear question
 - 4 answer options labeled A–D
@@ -43,14 +46,14 @@ Format exactly like this:
 """
 
     try:
-        response = openai.ChatCompletion.create(model="gpt-4o",
-                                                messages=[{
-                                                    "role": "user",
-                                                    "content": prompt
-                                                }],
-                                                temperature=0.7,
-                                                max_tokens=1000)
-        content = response["choices"][0]["message"]["content"]
+        response = client.chat.completions.create(model="gpt-4o",
+                                                  messages=[{
+                                                      "role": "user",
+                                                      "content": prompt
+                                                  }],
+                                                  temperature=0.7,
+                                                  max_tokens=1000)
+        content = response.choices[0].message.content
         return jsonify({"questions": content})
 
     except Exception as e:

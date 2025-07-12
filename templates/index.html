@@ -8,11 +8,12 @@
       const curriculum = document.getElementById('curriculum').value;
       const subject = document.getElementById('subject').value;
       const topic = document.getElementById('topic').value;
+      const difficulty = document.getElementById('difficulty').value
 
       const res = await fetch('/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ curriculum, subject, topic })
+        body: JSON.stringify({ curriculum, subject, topic, difficulty })
       });
 
       const data = await res.json();
@@ -27,7 +28,7 @@
   </script>
 </head>
 <body>
-  <h1>AI Multiple Choice Generator</h1>
+  <h1>LockIn</h1>
 
   <label for="curriculum">Curriculum:</label>
   <select id="curriculum">
@@ -44,6 +45,13 @@
 
   <label for="topic">Topic:</label>
   <input type="text" id="topic" placeholder="e.g., Quadratics"><br><br>
+
+  <label for="difficulty">Difficulty:</label>
+  <select id="difficulty">
+    <option value="Easy">Easy</option>
+    <option value="Medium">Medium</option>
+    <option value="Hard">Hard</option>
+  </select><br><br>
 
   <button onclick="generateQuestions()">Generate MCQs</button>
 
