@@ -6,28 +6,38 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
   <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+  <script>
     async function generateQuestions() {
       const curriculum = document.getElementById('curriculum').value;
       const subject = document.getElementById('subject').value;
       const topic = document.getElementById('topic').value;
       const difficulty = document.getElementById('difficulty').value;
+      const numQuestions = document.getElementById('numQuestions').value
 
       const res = await fetch('/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ curriculum, subject, topic, difficulty })
+        body: JSON.stringify({ curriculum, subject, topic, difficulty, numQuestions })
       });
 
       const data = await res.json();
       const output = document.getElementById('output');
-      output.innerHTML = ''; // Clear previous output
+      output.innerHTML = '';
 
       if (data.questions) {
         const questions = parseQuestions(data.questions);
         if (questions.length === 0) {
-          output.innerHTML = "<p><strong>Could not parse any questions.</strong>                         Check format or try again.</p>";
+          output.innerHTML = "<p><strong>Could not parse any questions.</strong> Check format or try again.</p>";
           return;
         }
+
         questions.forEach((q, index) => {
           const container = document.createElement('div');
           container.style.marginBottom = '30px';
@@ -37,12 +47,17 @@
           container.style.backgroundColor = '#fefefe';
 
           const questionText = document.createElement('p');
-          questionText.innerHTML = `<strong>Q${index + 1}:</strong> ${q.question}`;
+          questionText.innerHTML = `<strong>Q${index + 1}:</strong> ${wrapLatex(q.question)}`;
           container.appendChild(questionText);
 
-          q.options.forEach((opt, i) => {
+          const hint = document.createElement('p');
+          const explanation = document.createElement('p');
+          hint.style.marginTop = '10px';
+          explanation.style.marginTop = '10px';
+
+          q.options.forEach(opt => {
             const btn = document.createElement('button');
-            btn.textContent = opt;
+            btn.innerHTML = wrapLatex(opt);
             btn.style.margin = '5px';
             btn.onclick = () => {
               if (opt[0] === q.answer) {
@@ -50,8 +65,8 @@
               } else {
                 btn.style.backgroundColor = '#f6c6c6';
               }
-
-              explanation.innerHTML = `<strong>Explanation:</strong> ${q.explanation}`;
+              explanation.innerHTML = `<strong>Explanation:</strong> ${wrapLatex(q.explanation)}`;
+              MathJax.typesetPromise([explanation]);
             };
             container.appendChild(btn);
           });
@@ -60,24 +75,27 @@
           hintBtn.textContent = "Show Hint";
           hintBtn.style.marginTop = '10px';
           hintBtn.onclick = () => {
-            hint.innerHTML = `<strong>Hint:</strong> ${q.hint}`;
+            hint.innerHTML = `<strong>Hint:</strong> ${wrapLatex(q.hint)}`;
+            MathJax.typesetPromise([hint]);
           };
+
           container.appendChild(document.createElement('br'));
           container.appendChild(hintBtn);
-
-          const hint = document.createElement('p');
-          const explanation = document.createElement('p');
-          hint.style.marginTop = '10px';
-          explanation.style.marginTop = '10px';
-
           container.appendChild(hint);
           container.appendChild(explanation);
-
           output.appendChild(container);
         });
+
+        // Re-render LaTeX math in all content
+        MathJax.typesetPromise();
       } else {
         output.innerText = "Error: " + data.error;
       }
+    }
+
+    // Wrap any raw LaTeX in delimiters
+    function wrapLatex(str) {
+      return str.replace(/\$(.*?)\$/g, (_, math) => `\\(${math}\\)`);
     }
 
     function parseQuestions(rawText) {
@@ -145,6 +163,10 @@
     <option value="Hard">Hard</option>
     <option value="Mixed">Mixed</option>
   </select><br><br>
+
+  <label for="numQuestions">Number of Questions:</label>
+  <input type="number" id="numQuestions" min="1" max="15" value="5"><br><br>
+
 
   <button onclick="generateQuestions()">Generate MCQs</button>
 
