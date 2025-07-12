@@ -1,3 +1,7 @@
+let totalQuestions = 0;
+let attempted = 0;
+let correct = 0;
+
 async function generateQuestions() {
   const curriculum = document.getElementById('curriculum').value;
   const subject = document.getElementById('subject').value;
@@ -15,12 +19,18 @@ async function generateQuestions() {
   const output = document.getElementById('output');
   output.innerHTML = '';
 
+  document.getElementById('score').innerHTML = '';
+
   if (data.questions) {
     const questions = parseQuestions(data.questions);
     if (questions.length === 0) {
       output.innerHTML = "<p><strong>Could not parse any questions.</strong> Check format or try again.</p>";
       return;
     }
+
+    attempted = 0;
+    correct = 0;
+    totalQuestions = questions.length;
 
     questions.forEach((q, index) => {
       const container = document.createElement('div');
@@ -44,13 +54,23 @@ async function generateQuestions() {
         btn.innerHTML = wrapLatex(opt);
         btn.style.margin = '5px';
         btn.onclick = () => {
-          if (opt[0] === q.answer) {
+          if (btn.disabled) return;
+
+          attempted++;
+          const isCorrect = opt[0] === q.answer;
+          
+          if (isCorrect) {
             btn.style.backgroundColor = '#c6f6c6';
+            correct++;
           } else {
             btn.style.backgroundColor = '#f6c6c6';
           }
+          q.options.forEach((_, i) => container.querySelectorAll('button')[i].disabled = true);
+          
           explanation.innerHTML = `<strong>Explanation:</strong> ${wrapLatex(q.explanation)}`;
           MathJax.typesetPromise([explanation]);
+
+          updateScore();
         };
         container.appendChild(btn);
       });
@@ -111,4 +131,9 @@ function parseQuestions(rawText) {
   });
 
   return parsed;
+}
+
+function updateScore() {
+  const scoreDiv = document.getElementById('score');
+  scoreDiv.innerHTML = `<strong>Progress:</strong> ${attempted}/${totalQuestions} attempted | ✅ ${correct} correct`;
 }
