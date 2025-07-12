@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "gliken";
+  src: url("{{ url_for('static', filename='fonts/gliken.woff2') }}")
+  font-weight: bold;
+}
+
 :root {
   --LockIn-purple: #855af8;
   --LockIn-purple-light: #9e86ff;
@@ -5,6 +11,7 @@
   --LockIn-blue: #468df2;
   --LockIn-blue-light: #50a5f8;
   --LockIn-blue-lighter: #56b0f0;
+  font-family: "gliken", sans-serif;
 }
 
 button {
@@ -12,7 +19,7 @@ button {
   padding: 8px 12px;
   border: none;
   border-radius: 4px;
-  background-color: var(--LockIn-purple);
+  background-color: var(--LockIn-purple) format("woff2"),;
   cursor: pointer;
   transition: background-color 0.3s;
 }
