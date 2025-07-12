@@ -136,4 +136,8 @@ function parseQuestions(rawText) {
 function updateScore() {
   const scoreDiv = document.getElementById('score');
   scoreDiv.innerHTML = `<strong>Progress:</strong> ${attempted}/${totalQuestions} attempted | ✅ ${correct} correct`;
+  if (attempted === totalQuestions) {
+    scoreDiv.innerHTML += `<br><strong>Final Score:</strong> ${correct}/${totalQuestions}       (${Math.round((correct / totalQuestions) * 100)}%)`;
+  }
+
 }
