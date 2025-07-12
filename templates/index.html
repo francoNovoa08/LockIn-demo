@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>LockIn</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
   <script>
     async function generateQuestions() {
       const curriculum = document.getElementById('curriculum').value;
@@ -80,24 +81,36 @@
     }
 
     function parseQuestions(rawText) {
-      const blocks = rawText.trim().split(/\n(?=\d+\.\s)/); // Split by numbered questions
-      const parsed = blocks.map(block => {
-        const questionMatch = block.match(/\d+\.\s(.*?)\n/);
-        const optionMatches = block.match(/^[A-D]\.\s.*$/gm);
+      const questionBlocks = rawText.split(/\n(?=\d+\.\s)/); // Split on "1. ", "2. "
+      const parsed = [];
+
+      questionBlocks.forEach(block => {
+        const lines = block.trim().split('\n');
+
+        let questionLine = lines.find(line => /^\d+\.\s/.test(line)) || '';
+        const question = questionLine.replace(/^\d+\.\s/, '').trim();
+
+        const optionLines = lines.filter(line => /^[\s]*[A-D]\.\s/.test(line)).slice(0, 4); //   Capture indented options
+        const options = optionLines.map(line => line.trim());
+
         const answerMatch = block.match(/Answer:\s*([A-D])/i);
         const hintMatch = block.match(/Hint:\s*(.*)/i);
         const explanationMatch = block.match(/Explanation:\s*(.*)/i);
 
-        return {
-          question: questionMatch ? questionMatch[1] : "N/A",
-          options: optionMatches || [],
-          answer: answerMatch ? answerMatch[1] : "A",
-          hint: hintMatch ? hintMatch[1] : "No hint provided.",
-          explanation: explanationMatch ? explanationMatch[1] : "No explanation provided."
-        };
+        if (question && options.length === 4 && answerMatch) {
+          parsed.push({
+            question,
+            options,
+            answer: answerMatch[1],
+            hint: hintMatch ? hintMatch[1].trim() : "No hint provided.",
+            explanation: explanationMatch ? explanationMatch[1].trim() : "No explanation provided."
+          });
+        }
       });
+
       return parsed;
     }
+
   </script>
 </head>
 <body>
@@ -107,6 +120,7 @@
   <select id="curriculum">
     <option value="IB">IB</option>
     <option value="IGCSE">IGCSE</option>
+    <option value="IGCSE">A Levels</option>
   </select><br><br>
 
   <label for="subject">Subject:</label>

@@ -30,7 +30,7 @@ Each question must have:
 - A clear question
 - 4 answer options labeled A–D
 - A clearly indicated correct answer
-- A short hint
+- A short hint. The hint should not reveal the answer, but should guide the student towards the correct answer.
 - A short explanation
 
 Strictly use this format with NO extra line breaks or markdown:
