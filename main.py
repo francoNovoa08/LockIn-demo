@@ -1,11 +1,61 @@
-from flask import Flask
+import os
+
+from openai import OpenAI
+from flask import Flask, jsonify, render_template, request
 
 app = Flask(__name__)
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
-@app.route('/')
+@app.route("/")
 def index():
-    return 'Hello from Flask!'
+    return render_template("index.html")
 
-if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=5000)
+
+@app.route("/generate", methods=["POST"])
+def generate_mcqs():
+    data = request.get_json()
+    curriculum = data.get("curriculum", "IB")
+    subject = data.get("subject", "Math")
+    topic = data.get("topic", "Functions")
+
+    prompt = f"""
+You are an expert {curriculum} {subject} tutor.
+
+Generate 3 multiple-choice questions (MCQs) on the topic "{topic}" for the {curriculum} curriculum. 
+Each question must have:
+- A clear question
+- 4 answer options labeled A–D
+- A clearly indicated correct answer
+- A short hint
+- A short explanation
+
+Format exactly like this:
+
+1. Question?
+   A. ...
+   B. ...
+   C. ...
+   D. ...
+   Answer: B
+   Hint: [Hint here]
+   Explanation: [Explanation here]
+"""
+
+    try:
+        response = openai.ChatCompletion.create(model="gpt-4o",
+                                                messages=[{
+                                                    "role": "user",
+                                                    "content": prompt
+                                                }],
+                                                temperature=0.7,
+                                                max_tokens=1000)
+        content = response["choices"][0]["message"]["content"]
+        return jsonify({"questions": content})
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)

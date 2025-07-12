@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LockIn</title>
+  <script>
+    async function generateQuestions() {
+      const curriculum = document.getElementById('curriculum').value;
+      const subject = document.getElementById('subject').value;
+      const topic = document.getElementById('topic').value;
+
+      const res = await fetch('/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ curriculum, subject, topic })
+      });
+
+      const data = await res.json();
+      const output = document.getElementById('output');
+
+      if (data.questions) {
+        output.innerText = data.questions;
+      } else {
+        output.innerText = "Error: " + data.error;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>AI Multiple Choice Generator</h1>
+
+  <label for="curriculum">Curriculum:</label>
+  <select id="curriculum">
+    <option value="IB">IB</option>
+    <option value="IGCSE">IGCSE</option>
+  </select><br><br>
+
+  <label for="subject">Subject:</label>
+  <select id="subject">
+    <option value="Math">Maths</option>
+    <option value="Physics">Physics</option>
+    <option value="Biology">Biology</option>
+  </select><br><br>
+
+  <label for="topic">Topic:</label>
+  <input type="text" id="topic" placeholder="e.g., Quadratics"><br><br>
+
+  <button onclick="generateQuestions()">Generate MCQs</button>
+
+  <pre id="output" style="margin-top: 20px; white-space: pre-wrap; background-color: #f9f9f9; padding: 20px; border-radius: 8px;"></pre>
+</body>
+</html>
