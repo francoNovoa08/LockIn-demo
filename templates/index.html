@@ -16,22 +16,21 @@
 <body>
   <h1>LockIn</h1>
 
-  <label for="curriculum">Curriculum:</label>
+  <label for="curriculum" id="curriculum-label">Curriculum:</label>
   <select id="curriculum">
     <option value="IGCSE">IGCSE</option>
     <option value="IB">IB</option>
-    <option value="A-Levels">A Levels</option>
   </select><br><br>
 
   <div id="ib-level-container" style="display: none;">
-    <label for="ibLevel">IB Level:</label>
+    <label for="ibLevel" id="level-label">IB Level:</label>
     <select id="ibLevel">
       <option value="SL">SL</option>
       <option value="HL">HL</option>
     </select><br><br>
   </div>
 
-  <label for="subject">Subject:</label>
+  <label for="subject" id="subject-label">Subject:</label>
   <select id="subject">
     <option value="Math">Mathematics</option>
     <option value="Physics">Physics</option>
@@ -45,10 +44,10 @@
     <option value="Sports Science">Computer Science</option>
   </select><br><br>
 
-  <label for="topic">Topic:</label>
+  <label for="topic" id="topic-label">Topic:</label>
   <input type="text" id="topic" placeholder="e.g., Quadratics"><br><br>
 
-  <label for="difficulty">Difficulty:</label>
+  <label for="difficulty" id="difficulty-label">Difficulty:</label>
   <select id="difficulty">
     <option value="Easy">Easy</option>
     <option value="Medium">Medium</option>
