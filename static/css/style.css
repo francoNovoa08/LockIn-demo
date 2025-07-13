@@ -347,3 +347,40 @@ select:focus {
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
   outline: none;
 }
+
+/* Loading Indicator */
+
+.loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f6f6ff;
+  border: 2px solid var(--LockIn-purple-light);
+  border-radius: 16px;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.spinner {
+  border: 6px solid #e3dfff;
+  border-top: 6px solid var(--LockIn-purple);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  font-size: 18px;
+  color: var(--LockIn-purple-blue);
+  font-family: "roboto";
+}

@@ -10,39 +10,52 @@ async function generateQuestions() {
   const topic = document.getElementById('topic').value;
   const difficulty = document.getElementById('difficulty').value;
   const numQuestions = document.getElementById('numQuestions').value;
-
   const ibLevel = document.getElementById('ibLevel').value || '';
-  const res = await fetch('/generate', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ curriculum, subject, topic, difficulty, numQuestions, ibLevel })
-  });
 
-  const data = await res.json();
-  console.log("Raw data from server:", data);
+  const loading = document.getElementById('loading-indicator');
   const output = document.getElementById('output');
-  output.innerHTML = '';
-  document.getElementById('output').style.display = 'block';
-  document.getElementById('score').innerHTML = '';
+  const score = document.getElementById('score');
+  const form = document.getElementById('question-form');
 
-  if (data.questions) {
-    questions = parseQuestions(data.questions);
-    if (questions.length === 0) {
-      output.innerHTML = "<p><strong>Could not parse any questions.</strong> Check format or try again.</p>";
-      return;
+  // Show loading spinner and hide output/score/form
+  loading.style.display = 'flex';
+  output.style.display = 'none';
+  score.innerHTML = '';
+
+  try {
+    const res = await fetch('/generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ curriculum, subject, topic, difficulty, numQuestions, ibLevel })
+    });
+
+    const data = await res.json();
+
+    loading.style.display = 'none';
+    output.style.display = 'block';
+
+    if (data.questions) {
+      questions = parseQuestions(data.questions);
+      if (questions.length === 0) {
+        output.innerHTML = "<p><strong>Could not parse any questions.</strong> Check format or try again.</p>";
+        return;
+      }
+
+      attempted = 0;
+      correct = 0;
+      totalQuestions = questions.length;
+      currentQuestionIndex = 0;
+
+      form.style.display = "none";
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      showQuestion();
+    } else {
+      output.innerHTML = "<p><strong>Error:</strong> " + data.error + "</p>";
     }
-
-    attempted = 0;
-    correct = 0;
-    totalQuestions = questions.length;
-    currentQuestionIndex = 0;
-
-    document.getElementById("question-form").style.display = "none";
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    showQuestion();
-  } else {
-    output.innerText = "Error: " + data.error;
+  } catch (err) {
+    loading.innerHTML = "<p style='color: red; font-weight: bold;'>Something went wrong. Please try again.</p>";
+    console.error("Error fetching questions:", err);
   }
 }
 
