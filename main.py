@@ -11,13 +11,16 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 def home():
     return render_template("index.html")
 
+
 @app.route("/quiz")
 def quiz():
     return render_template("quiz.html")
 
+
 @app.route("/learn")
 def learn():
     return render_template("learn.html")
+
 
 @app.route("/generate", methods=["POST"])
 def generate_mcqs():
@@ -30,7 +33,7 @@ def generate_mcqs():
     ib_level = data.get("ibLevel", "")
 
     level_str = f" at the IB level {ib_level}" if curriculum == "IB" and ib_level else ""
-    
+
     prompt = f"""
 You are an expert {curriculum} {subject} tutor.
 
@@ -87,19 +90,18 @@ def learn_query():
     Question: {question}
     """
     try:
-        response = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[{
-                "role": "user",
-                "content": prompt
-            }],
-            temperature=0.7,
-            max_tokens=1000
-        )
+        response = client.chat.completions.create(model="gpt-4o",
+                                                  messages=[{
+                                                      "role": "user",
+                                                      "content": prompt
+                                                  }],
+                                                  temperature=0.7,
+                                                  max_tokens=1000)
         answer = response.choices[0].message.content
         return jsonify({"answer": answer})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=10000)
