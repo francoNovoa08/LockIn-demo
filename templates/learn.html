@@ -11,33 +11,36 @@
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/learn.css') }}">
 
   <title>Learn</title>
 </head>
-<body>
+  <body>
     <div id="learn-page">
 
-      <div class="learn-header" style="display: flex; align-items: center; gap: 20px;">
+      <div class="learn-header">
         <img src="{{ url_for('static', filename='images/Bo_happy.png') }}" alt="Bo happy" class="bo-happy-img">
-        <h1>Bo</h1>
+        <h1 class="bo-name">Bo</h1>
       </div>
 
-      <div id="learn-response" style="margin-top: 30px; font-family: 'roboto'; font-size: 18px; color:   #333;">
-        
-      </div>
+      <div class="centre-content">
+        <div id="learn-response-container">
+          <div id="learn-response">
+          </div>
+        </div>
 
+        <h3 id="learn-heading">What do you want to learn?</h3>
 
-      <h3>What do you want to learn?</h3>
-
-      <div class="learn-input-row" style="display: flex; align-items: center; gap: 10px;">
-        <input type="text" id="learn-input" placeholder="Ask Bo...">
-        <button id="learn-send-btn">
-          <img src="{{ url_for('static', filename='icons/send_icon.png') }}" alt="Send" style="width: 24px; height: 24px;">
-        </button>
+        <div class="learn-input-row">
+          <input type="text" id="learn-input" placeholder="Ask Bo...">
+          <button id="learn-send-btn">
+            <img src="{{ url_for('static', filename='icons/send_icon.png') }}" alt="Send">
+          </button>
+        </div>
       </div>
 
     </div>
-  
-  <script src="{{ url_for('static', filename='js/learn.js') }}"></script>
-</body>
+
+    <script src="{{ url_for('static', filename='js/learn.js') }}"></script>
+  </body>
 </html>

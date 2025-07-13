@@ -17,11 +17,12 @@ document.getElementById('learn-send-btn').addEventListener('click', async () => 
 
     const data = await res.json();
 
-    if (data.answer) {
-      responseBox.innerHTML = `<strong>Bo:</strong> ${data.answer}`;
-      MathJax.typesetPromise([responseBox]);
-    } else {
+if (data.answer) {
       responseBox.innerHTML = `<strong>Bo:</strong> ${markdownToHtml(data.answer)}`;
+      MathJax.typesetPromise([responseBox]);
+      document.getElementById('learn-heading').textContent = 'Any other questions?';
+    } else {
+      responseBox.innerHTML = `<span style="color:red;"><strong>Error:</strong> ${data.error}</span>`;
     }
   } catch (err) {
     responseBox.innerHTML = "<span style='color:red;'>Something went wrong. Try again.</span>";
