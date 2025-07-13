@@ -22,6 +22,7 @@ async function generateQuestions() {
   console.log("Raw data from server:", data);
   const output = document.getElementById('output');
   output.innerHTML = '';
+  document.getElementById('output').style.display = 'block';
   document.getElementById('score').innerHTML = '';
 
   if (data.questions) {
@@ -49,6 +50,9 @@ function showQuestion() {
   const q = questions[currentQuestionIndex];
   const output = document.getElementById('output');
   output.innerHTML = '';
+
+  output.classList.add('fade-in');
+  setTimeout(() => output.classList.remove('fade-in'), 800);
 
   const container = document.createElement('div');
   container.style.marginBottom = '30px';
@@ -110,7 +114,9 @@ function showQuestion() {
   hintBtn.style.marginTop = '10px';
   hintBtn.onclick = () => {
     hint.innerHTML = `<strong>Hint:</strong> ${wrapLatex(q.hint)}`;
-    MathJax.typesetPromise([hint]);
+    MathJax.typesetPromise([hint]).then(() => {
+      hint.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    });
   };
 
   container.appendChild(document.createElement('br'));
@@ -123,7 +129,7 @@ function showQuestion() {
 }
 
 function wrapLatex(str) {
-  return str.replace(/\$(.*?)\$/g, (_, math) => `\\(${math}\\)`);
+  return str.replace(/\$(.*?)\$/g, (_, math) => `$${math}$`);
 }
 
 function parseQuestions(rawText) {
@@ -159,9 +165,10 @@ function parseQuestions(rawText) {
 
 function updateScore() {
   const scoreDiv = document.getElementById('score');
-  scoreDiv.innerHTML = `<strong>Progress:</strong> ${attempted}/${totalQuestions} attempted | ✅ ${correct} correct`;
+  scoreDiv.innerHTML = `${attempted}/${totalQuestions} | ✅ ${correct} correct`;
   if (attempted === totalQuestions) {
     scoreDiv.innerHTML += `<br><strong>Final Score:</strong> ${correct}/${totalQuestions}`;
     document.getElementById("question-form").style.display = "block";
+    document.getElementById("output").style.display = "none";
   }
 }

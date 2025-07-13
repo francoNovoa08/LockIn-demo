@@ -37,10 +37,12 @@ You are an expert {curriculum} {subject} tutor.
 Generate {num_questions} multiple-choice questions (MCQs) on the topic "{topic}" for the {curriculum}{level_str} curriculum. 
 Ensure the questions are relevant to the {curriculum} curriculum. Abide by this strictly.
 Make the questions suitable for {difficulty} level students.
+For maths questions, use LaTeX for mathematical expressions. Ensure mathematical accuracy in every question. 
 Each question must have:
 - A clear question
 - 4 answer options labeled A–D
 - A clearly indicated correct answer
+- Only one correct answer
 - A short hint. The hint should not reveal the answer, but should guide the student towards the correct answer.
 - A short explanation
 
