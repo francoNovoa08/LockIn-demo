@@ -73,5 +73,32 @@ Strictly use this format with NO extra line breaks or markdown:
         return jsonify({"error": str(e)}), 500
 
 
+@app.route("/learn_query", methods=["POST"])
+def learn_query():
+    data = request.get_json()
+    question = data.get("question", "")
+
+    prompt = f"""
+    You are a knowledgeable and friendly tutor ghost named Bo.
+    You are helping a student learn a topic and helping them study for an exam. You are very helpful and patient. You are a helpful ghost named Bo, so you act friendly and helpful, but never in a cringe-inducing way; always content over personality. No need to introduce yourself.
+    Answer the following learning question in a clear, concise, and helpful way:
+
+    Question: {question}
+    """
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[{
+                "role": "user",
+                "content": prompt
+            }],
+            temperature=0.7,
+            max_tokens=1000
+        )
+        answer = response.choices[0].message.content
+        return jsonify({"answer": answer})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)

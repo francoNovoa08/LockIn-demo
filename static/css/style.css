@@ -26,6 +26,7 @@ fade-in {
   --LockIn-blue: #468df2;
   --LockIn-blue-light: #50a5f8;
   --LockIn-blue-lighter: #56b0f0;
+  --LockIn-background-cream: #fbf9f1;
   font-family: "gliken", sans-serif;
 }
 
@@ -37,6 +38,7 @@ body {
   height: 100vh;
   overflow-y: auto;
   position: relative;
+  background-color: var(--LockIn-background-cream);
 }
 
 button {

@@ -21,6 +21,7 @@ async function generateQuestions() {
   loading.style.display = 'flex';
   output.style.display = 'none';
   score.innerHTML = '';
+  loading.scrollIntoView({ behavior: 'smooth' })
 
   try {
     const res = await fetch('/generate', {

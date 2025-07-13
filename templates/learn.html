@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <title>Learn</title>
+</head>
+<body>
+    <div id="learn-page">
+
+      <div class="learn-header" style="display: flex; align-items: center; gap: 20px;">
+        <img src="{{ url_for('static', filename='images/Bo_happy.png') }}" alt="Bo happy" class="bo-happy-img">
+        <h1>Bo</h1>
+      </div>
+
+      <div id="learn-response" style="margin-top: 30px; font-family: 'roboto'; font-size: 18px; color:   #333;">
+        
+      </div>
+
+
+      <h3>What do you want to learn?</h3>
+
+      <div class="learn-input-row" style="display: flex; align-items: center; gap: 10px;">
+        <input type="text" id="learn-input" placeholder="Ask Bo...">
+        <button id="learn-send-btn">
+          <img src="{{ url_for('static', filename='icons/send_icon.png') }}" alt="Send" style="width: 24px; height: 24px;">
+        </button>
+      </div>
+
+    </div>
+  
+  <script src="{{ url_for('static', filename='js/learn.js') }}"></script>
+</body>
+</html>
