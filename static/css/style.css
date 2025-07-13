@@ -1,7 +1,13 @@
 @font-face {
   font-family: "gliken";
-  src: url("{{ url_for('static', filename='fonts/gliken.woff2') }}")
+  src: url("../fonts/Gliker-Black.woff");
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: normal;
 }
 
 :root {
@@ -14,27 +20,39 @@
   font-family: "gliken", sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "gliken", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
 button {
   color: white;
-  padding: 8px 12px;
+  padding: 16px 32px;
   border: none;
-  border-radius: 4px;
-  background-color: var(--LockIn-purple) format("woff2"),;
+  border-radius: 12px;
+  background-color: var(--LockIn-purple);
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 20px;
 }
 
 button:hover {
-  background-color: var(--LockIn-purple-light)
+  background-color: var(--LockIn-purple-light);
 }
 
 label {
   display: inline-block;
   color: white;
-  padding: 6px 10px;
+  padding: 10px 14px;
   border-radius: 12px;
   margin-bottom: 6px;
   font-weight: bold;
+  font-size: 18px;
 }
 
 #curriculum-label {
@@ -55,3 +73,105 @@ label {
 #numQuestions-label {
   background-color: var(--LockIn-blue-lighter)
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo-img {
+  width: 60px;
+  height: auto;
+}
+
+.lockin-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "roboto";
+}
+
+.logo-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.mode-title {
+  font-size: 60px;
+  color: var(--LockIn-purple);
+  margin: 20px 0 25px 0;
+  font-weight: bold;
+}
+
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+button.learn-button {
+  background-color: var(--LockIn-blue-light);
+  border: 2px solid black;
+}
+
+button.quiz-button {
+  background-color: var(--LockIn-purple);
+  border: 2px solid black;
+}
+
+button.learn-button:hover {
+  background-color: var(--LockIn-blue);
+}
+
+button.quiz-button:hover {
+  background-color: var(--LockIn-purple-light);
+}
+
+.mode-buttons button {
+  border-radius: 14px;
+  font-size: 18px;
+  padding: 12px 27px;
+  min-width: 180px;
+  font-family: "gliken";
+}
+
+.bo-img {
+  position: absolute;
+  left: 3%;
+  bottom: 0;
+  height: 65%;
+  max-width: 400px;
+  object-fit: contain;
+  z-index: 0;
+}
+
+#output {
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #fdfdfd;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  font-size: 20px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+

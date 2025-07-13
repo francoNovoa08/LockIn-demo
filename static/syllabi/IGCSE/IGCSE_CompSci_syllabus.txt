@@ -1,0 +1,35 @@
+Unit 1: Data representation
+Binary Systems
+Hexadecimal
+ASCII
+Representation of images
+Representation of sound
+Data compression
+Unit 2: Data transmission
+Data transmission
+Error checking and correction
+Online system security
+Unit 3: Hardware
+Computer architecture
+Memory
+Storage devices
+Scanners and cameras
+Manual input devices
+Sensors
+Speakers and screens
+Unit 4: Software
+Types of software
+Operating systems
+High and low level languages
+Unit 5: The internet and its uses
+Introduction to the internet
+Internet principles of operation
+Security aspects
+Keeping data safe
+Threats to online data
+Digital currency
+HTML
+Unit 6: Automated and emerging technologies
+Unit 7: Boolean logic
+Boolean logic
+Universal gates

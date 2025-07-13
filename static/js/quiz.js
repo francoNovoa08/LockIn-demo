@@ -19,6 +19,7 @@ async function generateQuestions() {
   });
 
   const data = await res.json();
+  console.log("Raw data from server:", data);
   const output = document.getElementById('output');
   output.innerHTML = '';
   document.getElementById('score').innerHTML = '';
@@ -34,6 +35,9 @@ async function generateQuestions() {
     correct = 0;
     totalQuestions = questions.length;
     currentQuestionIndex = 0;
+
+    document.getElementById("question-form").style.display = "none";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     showQuestion();
   } else {
@@ -157,6 +161,7 @@ function updateScore() {
   const scoreDiv = document.getElementById('score');
   scoreDiv.innerHTML = `<strong>Progress:</strong> ${attempted}/${totalQuestions} attempted | ✅ ${correct} correct`;
   if (attempted === totalQuestions) {
-    scoreDiv.innerHTML += `<br><strong>Final Score:</strong> ${correct}/${totalQuestions} (${Math.round((correct / totalQuestions) * 100)}%)`;
+    scoreDiv.innerHTML += `<br><strong>Final Score:</strong> ${correct}/${totalQuestions}`;
+    document.getElementById("question-form").style.display = "block";
   }
 }

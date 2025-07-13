@@ -6,9 +6,22 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-  <h1>Welcome to LockIn</h1>
-  <p>Select a mode:</p>
-  <button onclick="window.location.href='/quiz'">Quiz Mode</button>
-  <button onclick="window.location.href='/learn'">Learn Mode</button>
+  <div class="main-container">
+    <div class="center-content">
+      <div class="logo-title-container">
+        <img src="{{ url_for('static', filename='images/Logo_lock.png') }}" alt="LockIn Logo" class="logo-img">
+        <h1 class="lockin-title">LockIn</h1>
+      </div>
+      <p class="mode-title">Choose a Mode</p>
+      <div class="mode-buttons">
+        <button class="learn-button" onclick="window.location.href='/learn'">Learn</button>
+        <button class="quiz-button" onclick="window.location.href='/quiz'">Test</button>
+      </div>
+    </div>
+
+    </div>
+
+    <img src="{{ url_for('static', filename='images/Bo_main.png') }}" alt="Bo" class="bo-img">
+  </div>
 </body>
 </html>
