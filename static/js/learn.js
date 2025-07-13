@@ -18,10 +18,12 @@ document.getElementById('learn-send-btn').addEventListener('click', async () => 
     const data = await res.json();
 
 if (data.answer) {
-      responseBox.innerHTML = `<strong>Bo:</strong> ${markdownToHtml(data.answer)}`;
-      MathJax.typesetPromise([responseBox]);
-      document.getElementById('learn-heading').textContent = 'Any other questions?';
-    } else {
+  responseBox.innerHTML = `<strong>Bo:</strong> ${markdownToHtml(data.answer)}`;
+  responseBox.classList.add('fade-in');
+  setTimeout(() => responseBox.classList.remove('fade-in'), 600);
+  MathJax.typesetPromise([responseBox]);
+  document.getElementById('learn-heading').textContent = 'Any other questions?';
+} else {
       responseBox.innerHTML = `<span style="color:red;"><strong>Error:</strong> ${data.error}</span>`;
     }
   } catch (err) {

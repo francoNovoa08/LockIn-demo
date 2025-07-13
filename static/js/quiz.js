@@ -125,6 +125,7 @@ function showQuestion() {
 
   const hintBtn = document.createElement('button');
   hintBtn.textContent = "Show Hint";
+  hintBtn.classList.add('hint-button')
   hintBtn.style.marginTop = '10px';
   hintBtn.onclick = () => {
     hint.innerHTML = `<strong>Hint:</strong> ${wrapLatex(q.hint)}`;

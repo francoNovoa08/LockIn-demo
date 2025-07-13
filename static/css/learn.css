@@ -122,3 +122,69 @@ body {
   width: 28px;
   height: 28px;
 }
+
+#learn-input:focus {
+  border-color: var(--LockIn-purple);
+  box-shadow: 0 0 0 3px rgba(133, 90, 248, 0.2);
+}
+
+#learn-send-btn:hover img {
+  filter: brightness(1.2);
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#learn-send-btn:focus {
+  outline: 2px solid var(--LockIn-purple-light);
+  border-radius: 6px;
+}
+
+.page-fade {
+  animation: fadeInPage 0.5s ease-in-out;
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button:active {
+  transform: scale(0.96);
+  transition: transform 0.1s;
+}
+
+.top-right-logo-link {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  z-index: 999;
+}
+
+.top-right-logo {
+  width: 45px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.top-right-logo:hover {
+  transform: scale(1.1);
+}

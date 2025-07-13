@@ -5,14 +5,13 @@
   <title>LockIn</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
+<body class="page-fade">
   <div class="main-container">
     <div class="center-content">
       <div class="logo-title-container">
-        <img src="{{ url_for('static', filename='images/Logo_lock.png') }}" alt="LockIn Logo" class="logo-img">
-        <h1 class="lockin-title">LockIn</h1>
+        <img src="{{ url_for('static', filename='images/Logo_lock_full.png') }}" alt="LockIn Full Logo" class="logo-img-full">
       </div>
-      <p class="mode-title">Choose a Mode</p>
+      <p class="mode-title">Choose a Method</p>
       <div class="mode-buttons">
         <button class="learn-button" onclick="window.location.href='/learn'">Learn</button>
         <button class="quiz-button" onclick="window.location.href='/quiz'">Test</button>
